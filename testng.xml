@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.demo.listeners.TestListeners"/>
+    </listeners>
+    <test parallel="methods" thread-count="5" preserve-order="true" name="/Users/vinay/Desktop/vinay/learning/ApiAutomationFramework">
+        <classes>
+            <class name="com.demo.GetTests">
+                <methods>
+                    <include name="getSinglePostsDetails" />
+                    <include name="getPostsDetails" />
+                </methods>
+            </class>
+<!--            <class name="com.demo.PostTests">-->
+<!--                <methods>-->
+<!--                    <include name="PostPostData" />-->
+<!--                    <include name="PostPostDataWithExternalFile" />-->
+<!--                    <include name="postCallWithJsonSchemaValidation" />-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>
